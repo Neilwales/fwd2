@@ -1,0 +1,17 @@
+services:
+  # A Docker web service
+  - type: web
+    name: neil
+    env: docker
+    region: Singapore
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        # value: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        # value: OWNER_ID
+        sync: false
+      - key: REMOVE_TAG
+        # value: REMOVE_TAG
+        sync: false
